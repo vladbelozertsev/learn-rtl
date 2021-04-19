@@ -1,20 +1,28 @@
-import { useState, useEffect } from 'react';
 import './App.css';
+import logo from './logo.svg';
+import { useState, useEffect } from 'react';
 
 const Search = (props) => {
   return (
-    <div>
+    <div class="inp-box">
       <label htmlFor="search">{props.children}</label>
-      <input type="text" id="search" defaultValue={props.value} onChange={props.onChange} />
+      <input id="search" placeholder="search text..." type="text" value={props.value} onChange={props.onChange} />
+
+      <button>Отправить</button>
     </div>
   );
 };
 
 const App = () => {
-  const [search, setSearch] = useState('');
+  const [search, setSearch] = useState('yoyo');
 
   const handleChange = (e) => {
     setSearch(e.target.value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(search);
   };
 
   useEffect(() => {
@@ -22,12 +30,13 @@ const App = () => {
   }, [search]);
 
   return (
-    <div>
+    <form onSubmit={handleSubmit} aria-label="form">
+      <img src={logo} alt="search image" />
       <Search value={search} onChange={handleChange}>
         Search:
       </Search>
       <p>Searches for {search ? search : '...'}</p>
-    </div>
+    </form>
   );
 };
 
