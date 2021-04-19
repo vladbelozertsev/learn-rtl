@@ -1,0 +1,12 @@
+Курс на youtube:
+1) https://www.youtube.com/watch?v=n79PMyqcCJ8
+
+Проблема с запуском тестов из .test.js файла (при нажатии на слово test - функция vscode-плагина jest-runner)
+1) https://stackoverflow.com/questions/63005011/support-for-the-experimental-syntax-jsx-isnt-currently-enabled
+2) https://stackoverflow.com/questions/46898638/importing-images-breaks-jest-test
+
+Колор:
+1) https://www.w3schools.com/colors/colors_picker.asp?colorhex=FFFFFF
+
+Ошибка (линтер подч красным при toMatchSnapshot())
+1) https://stackoverflow.com/questions/59078246/jest-react-new-snapshot-was-not-written-the-update-flag-must-be-explicitly-pa
