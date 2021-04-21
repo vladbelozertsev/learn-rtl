@@ -1,19 +1,17 @@
-import './App.css';
-import logo from './logo.svg';
+import logo from '../logo.svg';
 import { useState, useEffect } from 'react';
 
 const Search = (props) => {
   return (
-    <div class="inp-box">
+    <div className="inp-box">
       <label htmlFor="search">{props.children}</label>
       <input id="search" placeholder="search text..." type="text" value={props.value} onChange={props.onChange} />
-
       <button>Отправить</button>
     </div>
   );
 };
 
-const App = () => {
+const SearchTypes = () => {
   const [search, setSearch] = useState('yoyo');
 
   const handleChange = (e) => {
@@ -40,4 +38,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default SearchTypes;

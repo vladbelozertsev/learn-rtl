@@ -1,5 +1,7 @@
-Курс на youtube:
+Источники:
 1) https://www.youtube.com/watch?v=n79PMyqcCJ8
+2) https://testing-library.com/docs/queries/about#types-of-queries
+3) https://stackoverflow.com/questions/58857019/react-testing-library-avoid-getby
 
 Проблема с запуском тестов из .test.js файла (при нажатии на слово test - функция vscode-плагина jest-runner)
 1) https://stackoverflow.com/questions/63005011/support-for-the-experimental-syntax-jsx-isnt-currently-enabled
@@ -10,3 +12,4 @@
 
 Ошибка (линтер подч красным при toMatchSnapshot())
 1) https://stackoverflow.com/questions/59078246/jest-react-new-snapshot-was-not-written-the-update-flag-must-be-explicitly-pa
+
